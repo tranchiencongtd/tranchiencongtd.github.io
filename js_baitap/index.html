@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bai Tap</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="section_1">
+      <h1>Hàm, rẽ nhánh, vòng lặp</h1>
+      <div id="EX_1">
+        <p>1.Xây dựng hàm giải phương trình bậc 2.</p>
+        <div class="input">
+          <input type="number" id="varA"> X<sup>2</sup> + <input type="number" id="varB">X + <input type="number" id="varC"> = 0
+          <br>
+          <button onclick="giaiPT2()">Submit</button>
+          <button onclick="resetPT2()">Reset</button>
+        </div>
+        <div class="output">
+          <b>Result: <span id="resultEX_1"></span></b>
+        </div>
+      </div>
+      <div id="EX_2">
+        <div class="input">
+          <p>2.Nhập vào tháng, năm. In ra số ngày của tháng đó.</p>
+          Month: <input type="number" id="varMonth">
+          Year: <input type="number" id="varYear">
+          <br>
+          <button onclick="calculatorDate()">Submit</button>
+          <button onclick="resetDate()">Reset</button>
+        </div>
+        <div class="output">
+          <b>Result: <span id="resultEX_2"></span></b>
+        </div>
+      </div> 
+      <div id="EX_3">
+        <div class="input">
+          <p>3.Nhập vào 1 số nguyên n, yêu cầu xuất tất cả số nguyên tố từ 1 đến n (mỗi số cách 1 khoảng trắng), nếu không có số nào, xuất -1.</p>
+          Nhập N: <input type="number" id="varN">
+          <br>
+          <button onclick="findIt()">Submit</button>
+          <button onclick="resetN()">Reset</button>
+        </div>
+        <div class="output">
+          <b>Result: <span id="resultEX_3"></span></b>
+        </div>
+      </div>
+    </div>
+    <div class="section_2">
+      <h1>Nâng cao</h1>
+      <p>Tạo 1 slide show đơn giản từ list object: </p>
+      <div class="slide">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Local Js -->
+  <script src="./js/section1.js"></script>
+  <script src="./js/sextion2.js"></script>
+</body>
+</html>
