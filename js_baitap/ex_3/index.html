@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex_3</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <pre id="thisisproblem"></pre>
+    <button class="btnUpdate" onclick="show()">Update</button>
+    <div id="update">
+      <div class="container">
+        <form name="form">
+          <div class="wrap">
+            <div class="left">
+              <div class="group">
+                <input type="text" name ="title" id="title" />
+              </div>
+              <div class="group">
+                <div class="type">
+                  <label for="type">Type: </label>
+                  <select name="type" id="type">
+                    <option value="task">Bug1</option>
+                    <option value="task1">Bug2</option>
+                    <option value="task2">Bug3</option>
+                    <option value="task3">Bug4</option>
+                  </select>
+                </div>
+                <div class="state">
+                  <label for="state">State: </label>
+                  <select name="state" id="state">
+                    <option value="todo">Bug5</option>
+                    <option value="todo1">Bug6</option>
+                    <option value="todo2">Bug7</option>
+                    <option value="todo3">Bug8</option>
+                  </select>
+                </div>
+              </div>
+                <div class="group">
+                  <label>Priority:</label>
+                  <input
+                    type="radio"
+                    name="priority"
+                    id="highest"
+                    value="highest"
+                  >
+                  <label for="highest">Highest</label>
+                  <input type="radio" name="priority" id="high" value="high" />
+                  <label for="high">High</label>
+                  <input
+                    type="radio"
+                    name="priority"
+                    id="medium"
+                    value="medium"
+                  >
+                  <label for="medium">Medium</label>
+                  <input type="radio" name="priority" id="low" value="low" />
+                  <label for="low">Low</label>
+                </div>
+                <div class="group">
+                  <label>Issue allow for:</label><br >
+                  <input
+                    type="checkbox"
+                    name="allowFor"
+                    id="back_end"
+                    value="back_end">
+                  <label for="back_end">Back-end</label><br >
+                  <input
+                    type="checkbox"
+                    name="allowFor"
+                    id="front_end"
+                    value="front_end">
+                  <label for="front_end">Front-end</label><br >
+                  <input
+                    type="checkbox"
+                    name="allowFor"
+                    id="function_test"
+                    value="function_test">
+                  <label for="function_test">Function tester</label><br>
+                  <input
+                    type="checkbox"
+                    name="allowFor"
+                    id="performance_test"
+                    value="performance_test">
+                  <label for="performance_test">Performance tester</label>
+                </div>
+                <div class="group">
+                  <label for="description">Description:</label>
+                  <textarea
+                    name="description"
+                    id="description"
+                  ></textarea>
+                </div>
+              </div>
+            <div class="right">
+              <div class="create">
+                <label for="createdBy">Created by:</label>
+                <input type="text" name="createdBy" id="createdBy">
+              </div>
+              <div class="assignee">
+                <label for="assignee">Assignee:</label>
+                <input type="text" name="assignee" id="assignee">
+              </div>
+              <div class="estimate">
+                <label for="estimate">Estimate:</label>
+                <input type="text" name="estimate" id="estimate">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="saveandclose">
+          <button class="btn save" onclick="save()">Save</button>
+          <button class="btn close" onclick="hide()">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
