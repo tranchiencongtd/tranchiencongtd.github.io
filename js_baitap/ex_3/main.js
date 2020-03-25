@@ -59,9 +59,9 @@ function getValue() {
 }
 
 function statusCheckBox() {
-    let allowFor = document.getElementsByName('allowFor');
-    for(let i=0;i<allowFor.length;i++) {
-        allowFor[i].checked = false
+    let resetCheck = document.getElementsByName('allowFor');
+    for(let i=0;i < resetCheck.length;i++) {
+        resetCheck[i].checked = false
     };
 
     for (i = 0; i < icandoit.allowFor.length; i++) {
