@@ -141,7 +141,7 @@ header {
   }
 
   .content {
-    position: relative;
+    // position: relative;
     // line-height: 1.4;
     color: #492c6f;
     z-index: 1;
@@ -153,9 +153,9 @@ header {
 
     img {
       position: absolute;
-      top: -15rem;
-      left: 50%;
-      width: 50%;
+      top: 10%;
+      left: 20%;
+      width: 30%;
       z-index: -1;
     }
 
@@ -172,8 +172,6 @@ header {
 }
 
 section {
-  margin-top: 20px;
-
   .content {
     color: #17092c;
     display: flex;
