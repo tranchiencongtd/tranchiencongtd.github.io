@@ -17,8 +17,8 @@ html,body {
 .btn {
   display: inline-block;
   border: none;
-  padding: 5px 30px;
-  border-radius: 18px;
+  padding: 10px 30px;
+  border-radius: 20px;
   margin: 10px 0px;
   color: #f4f4f4 !important;
   background: transparent;
@@ -34,6 +34,8 @@ html,body {
   background: #f4f4f4;
   color: #333 !important;
 }
+
+
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 
@@ -58,17 +60,22 @@ header {
     align-items: center;
     h3 {
       font-size: 35px;
+      cursor: pointer;
+      &:hover {
+        color: #725494;
+      }
     }
   }
 }
 
 #navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   ul {
     display: flex;
+    justify-content: center;
     background: #725494;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     li {
       padding: 15px 25px;
       cursor: pointer;
@@ -146,16 +153,17 @@ header {
 
     img {
       position: absolute;
-      top: -150%;
+      top: -15rem;
       left: 50%;
       width: 50%;
       z-index: -1;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       margin: 10px 0;
       line-height: 1.5;
+      font-weight: 600;
     }
     a {
       color: burlywood;
@@ -200,6 +208,7 @@ section {
 }
 
 footer {
+  margin-top: 80px;
   h4 {
     margin-top: 1px;
     color: #f4f4f4;
