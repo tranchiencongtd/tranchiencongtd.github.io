@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 700;
+  overflow: hidden;
+}
+
+#particles-js {
+  height: 100vh;
+}
+
+.welcome-section {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  background: #050505;
+  z-index: 1;
+}
+
+.content-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 10;
+  line-height: 2;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+
+.fly-in-text {
+  list-style: none;
+}
+
+.fly-in-text li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 6em;
+  color: #af1d1d;
+  opacity: .9;
+  transition: all 5s ease;
+  cursor: default;
+  font-family: 'Nosifer', cursive;
+
+}
+
+/* .fly-in-text:nth-child(5) {
+  margin-right: 0;
+} */
+
+.enter-btn {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: none;
+  opacity: .5;
+  transition: all 1s ease 3.5s;
+  color: #f6f6f6;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+
+.enter-btn:hover {
+  color: #af1d1d;
+}
+.content-hidden .fly-in-text li {opacity: 0;}
+.content-hidden .fly-in-text li:nth-child(1) {transform: translate3d(-150px,0,0);}
+.content-hidden .fly-in-text li:nth-child(2) {transform: translate3d(-100px,0,0);}
+.content-hidden .fly-in-text li:nth-child(3) {transform: translate3d(50px,0,0);}
+.content-hidden .fly-in-text li:nth-child(4) {transform: translate3d(100px,0,0);}
+.content-hidden .fly-in-text li:nth-child(5) {transform: translate3d(150px,0,0);}
+.content-hidden .fly-in-text li:nth-child(6) {transform: translate3d(250px,0,0);}
+
+.content-hidden .enter-btn {
+  opacity: 0 ;
+  transform: translate3d(0,-30px,0);
+}
+
+/* GAME */
+.sound img {
+  position: fixed;
+  width: 3em;
+  z-index: 1;
+  filter: brightness(90);
+  bottom: 3em;
+  left: 3em;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.change::after {
+  padding: 0;
+  margin: 0;
+  content: "Sound";
+  position: fixed;
+  color: #B3B3B3;
+  font-size: 1.1em;
+  bottom: 5.5em;
+  left: 2.65em;
+  z-index: 1;
+  opacity: 1;
+  margin-bottom: 1em;
+  transition: all ease 1s;
+}
+
+input#mute {
+  display: none;
+}
+
+.mute img {
+  display: none;
+}
+
+input#mute:checked ~ .unmute img {
+  display: none;
+}
+
+input#mute:checked ~ .mute img {
+  display: inline-block;
+}
+
+#ahihi h1 {
+  height: 100vh;
+}
+
+#game {
+  height: 100vh;
+  z-index: -2 !important;
+}
+
+/* Loading */
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 2px;
+  overflow: hidden;
+  background:#1b1b1b;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader{
+  width:100%;
+  height:100vh;
+  background:#050505;
+  overflow:hidden;
+  position:fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #f6f6f6;
+
+}
+
+.p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* Thunder */
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/wallpaperflare.com_wallpaper.jpg");
+  background-position: center center;
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.lightning{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/wallpaperflare.com_wallpaper.jpg");
+  background-position: center center;
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: brightness(2);
+  filter: brightness(2);
+  -o-filter: brightness(2);
+  -moz-filter: brightness(2);
+  z-index: -1;
+}
+
+/*Now just a opacity animation*/
+.flashit{
+-webkit-animation: flash ease-out 6s infinite;
+-moz-animation: flash ease-out 6s infinite;
+animation: flash ease-out 6s infinite;
+animation-delay: 2s;
+}
+
+@-webkit-keyframes flash {
+	from { opacity: 0; } 
+  92% { opacity: 0; }
+	93% { opacity: 0.6; }
+  94% { opacity: 0.2; }
+  96% { opacity: 0.9; } 
+	to { opacity: 0; }
+}
+
+@keyframes flash {
+	from { opacity: 0; } 
+    92% { opacity: 0; }
+	93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 1; } 
+	to { opacity: 0; }
+}
+/*End! is that simple! */
+
+/*Now just some stupid logo to get some look and feel */
+
+
+@media screen and (max-width: 1000px) {
+  .enter-btn {
+    font-size: .8em;
+  }
+  .fly-in-text li {
+    font-size: 3em;
+  }
+}
