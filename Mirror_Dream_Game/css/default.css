@@ -725,7 +725,7 @@ tw-enchantment[style*=" color"] .enchantment-link:not(:hover) {
 tw-link:hover,
 .enchantment-link:hover {
   color: #adce1a;
-  transform: scale(1.1);
+/*   transform: scale(1.1); */
 }
 /* tw-link:active,
 .enchantment-link:active {
@@ -737,7 +737,7 @@ tw-enchantment[style*=" color"] .visited:not(:hover) {
 }
 .visited:hover {
   color: #adce1a;
-  transform: scale(1.1);
+/*   transform: scale(1.1); */
 }
 tw-broken-link {
   color: #993333;
