@@ -276,3 +276,9 @@ animation-delay: 2s;
     font-size: 3em;
   }
 }
+
+@media screen and (max-width: 500px) {
+	body {
+		display: none;
+	}
+}
